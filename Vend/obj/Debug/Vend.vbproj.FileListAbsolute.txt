@@ -1,0 +1,11 @@
+C:\Users\Harrison\Documents\GitHub\CS451\Vend\bin\Debug\Vend.exe.config
+C:\Users\Harrison\Documents\GitHub\CS451\Vend\obj\Debug\Vend.vbprojResolveAssemblyReference.cache
+C:\Users\Harrison\Documents\GitHub\CS451\Vend\obj\Debug\Vend.MainForm.resources
+C:\Users\Harrison\Documents\GitHub\CS451\Vend\obj\Debug\Vend.Resources.resources
+C:\Users\Harrison\Documents\GitHub\CS451\Vend\obj\Debug\Vend.vbproj.GenerateResource.Cache
+C:\Users\Harrison\Documents\GitHub\CS451\Vend\obj\Debug\Vend.xml
+C:\Users\Harrison\Documents\GitHub\CS451\Vend\bin\Debug\Vend.exe
+C:\Users\Harrison\Documents\GitHub\CS451\Vend\bin\Debug\Vend.pdb
+C:\Users\Harrison\Documents\GitHub\CS451\Vend\bin\Debug\Vend.xml
+C:\Users\Harrison\Documents\GitHub\CS451\Vend\obj\Debug\Vend.exe
+C:\Users\Harrison\Documents\GitHub\CS451\Vend\obj\Debug\Vend.pdb
