@@ -4,7 +4,7 @@ import java.io.*;
 public class DSCalc {
 	
 	public static void main(String[] args) {
-		Queue qs = new QueueLL();
+		Stack qs = new StackLL();
 		qs = loadQuery();
 		
 		String result = "";
@@ -14,37 +14,37 @@ public class DSCalc {
 		println(result);
 	}
 	
-	public static Queue loadQuery() {
+	public static Stack loadQuery() {
 		Scanner inp = new Scanner(System.in);
-		Queue queryQueue = new QueueLL();
+		Stack queryStack = new StackLL();
 		char[] query;
 		
 		query = inp.nextLine().toCharArray();
 		
 		print("Input: ");
 		for (int i=0; i<query.length; i++) {
-			queryQueue.enqueue(query[i]);
+			queryStack.push(query[i]);
 			 print(" "+i+":"+query[i]);
 		}
 		println();
 		
-		return queryQueue;
+		return queryStack;
 	}
 	
-	public static String runQuery(Queue q) {
+	public static String runQuery(Stack q) {
 		
 		// stateCurs: 0-7, 0 = init and 8 = accept
 		int stateCur = 0;
 		
-		// outQueue = dequeueped from q
+		// outStack = popped from q
 		char charCur;
-		Queue outQueue = new QueueLL();
+		Stack outStack = new StackLL();
 		
 		//result string
 		String r = "";
 		
 		while (!q.isEmpty() ) {
-			charCur = (char)q.dequeue();
+			charCur = (char)q.pop();
 			print(stateCur+":"+charCur+" ");
 			switch(stateCur) {
 				case 0:
@@ -151,10 +151,10 @@ public class DSCalc {
 					println("none found");
 					break;
 			}
-			outQueue.enqueue(charCur);
+			outStack.push(charCur);
 		}
-		for (int i=0; i<outQueue.size(); i++) {
-			r = r + outQueue.dequeue().toString();
+		while (!outStack.isEmpty()) {
+			r = r + outStack.pop().toString();
 		}
 		return r;
 	}
